@@ -23,7 +23,6 @@ main{
 }
 
 header{
-    min-height: 690px;
     background-color: #F9F6F1;
 }
 a{
@@ -304,6 +303,10 @@ li {
 .dress__item-cream{
     background-color: #F9F6F1;
 }
+.dress__item img {
+    width: 100%;
+    position: relative;
+}
 /*---------section banner---------*/
 .subscribe{
     background-color: #212121;
@@ -367,7 +370,7 @@ li {
     width: 90%;
 }
 
-/* @media print{
+@media print{
     h2{
         display: none;
     }
@@ -407,17 +410,18 @@ li {
     .catalog{
         justify-content: center;
     }
+    
 }
 
 @media (max-width:576px){
     .delivery{
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 40px;   
     }
     .card{
         width: 97%;
     }
-} */
+}
 
 body{
     min-width: 320px;
@@ -425,10 +429,15 @@ body{
 .navbar-toggler{
     display: none;
 }
+
+
 @media(max-width:1110px){
     .container{
         width: auto;
         padding: 0 30px;
+    }
+    .dress__item {
+        width: 25%;
     }
 }
 @media (max-width:1326px){
@@ -449,6 +458,7 @@ body{
     .header{
         min-height: 90px;
     }
+    
 }
 @media(max-width:992px){
     .menu__wrapper{
@@ -457,6 +467,21 @@ body{
     .logo{
         order:-1;
         width: 100%;
+        justify-content: space-between;
+    }
+    .menu__link {
+        padding: 15px 0;
+    }
+}
+@media (max-width: 859px) {
+    .logo {
+        order: -1;
+        width: 70%;
+        justify-content: space-between;
+    }
+    .basket {
+        order: -1;
+        text-align: right;
     }
 }
 @media(max-width:768px){
@@ -469,6 +494,28 @@ body{
         order:-1;
         text-align: right;
     }
+    header{
+        min-height: 200px;
+    }
+    .dress__item {
+        width: 33%;
+    }
+    main {
+        margin-top: 79px;
+    }
+}
+@media (max-width: 715px) {
+    .basket,
+    .menu {
+        display: none;
+        width: 100%;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .mainmenu__list {
+        flex-direction: column;
+    }  
 }
 @media(max-width:600px){
     .basket,
@@ -481,6 +528,21 @@ body{
     }
     .mainmenu__list{
         flex-direction: column;
+    }
+}
+@media (max-width: 576px) {
+    .delivery {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .card {
+        width: 90%;
+    }
+    .catalog {
+        justify-content: center;
+    }
+    .dress__item {
+        width: 50%;
     }
 }
 .show{
