@@ -474,8 +474,15 @@ body{
     .basket,
     .menu__icon{
         display: none;
+        width: 100%;
     }
     .navbar-toggler{
         display: block;
     }
+    .mainmenu__list{
+        flex-direction: column;
+    }
+}
+.show{
+    display:block
 }
